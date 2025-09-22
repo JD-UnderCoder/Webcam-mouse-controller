@@ -4,7 +4,7 @@ Control your computer's mouse using hand gestures captured through your webcam! 
 
 ## Features
 
-### 🖱️ Mouse Control (`webcam_controller.py`)
+### 🖱️ Mouse Control
 - **Cursor Movement**: Point with your index finger to move the cursor
 - **Left Click**: Quick pinch (thumb + index finger) 
 - **Right Click**: Pinch thumb + middle finger with brief hold
@@ -12,19 +12,6 @@ Control your computer's mouse using hand gestures captured through your webcam! 
 - **Real-time Hand Tracking**: Uses MediaPipe for accurate hand detection
 - **Smooth Cursor Movement**: Built-in smoothing algorithm for natural movement
 - **Toggle Controls**: Enable/disable mouse and click controls on-the-fly
-
-### ⌨️ Virtual Keyboard (`webcam_virtual_keyboard.py`)
-- **Full QWERTY Layout**: Complete virtual keyboard with all standard keys
-- **Dwell Selection**: Hover over keys to select them
-- **Pinch Selection**: Alternative pinch-to-click input method
-- **Modifier Keys**: Support for Shift, Caps Lock, Ctrl, Alt
-- **Real-time Preview**: See what you're typing on screen
-
-### 🎯 Gesture Keyboard (`webcam_keyboard.py`)
-- **Zone-based Typing**: Divide screen into 9 zones for character input
-- **Multiple Modes**: Letters, Numbers, Symbols, and Actions
-- **Finger Counting**: Use different finger counts (1-5) for character selection
-- **Hand Position Mapping**: Combine finger count with hand position for precise input
 
 ## Requirements
 
@@ -54,9 +41,7 @@ Control your computer's mouse using hand gestures captured through your webcam! 
 
 ## Usage
 
-### Mouse Control Mode
-
-1. **Run the main controller:**
+1. **Run the mouse controller:**
    ```bash
    python webcam_controller.py
    ```
@@ -72,38 +57,6 @@ Control your computer's mouse using hand gestures captured through your webcam! 
    - `m` - Toggle mouse control on/off
    - `c` - Toggle click control on/off  
    - `SPACE` - Recalibrate (reset all gestures)
-
-### Virtual Keyboard Mode
-
-1. **Run the virtual keyboard:**
-   ```bash
-   python webcam_virtual_keyboard.py
-   ```
-
-2. **Selection Methods:**
-   - **Dwell**: Hover your fingertip over a key for 0.7 seconds
-   - **Pinch**: Point at a key and pinch to select it
-
-3. **Controls:**
-   - `p` - Toggle between dwell and pinch selection
-   - `q` - Quit
-
-### Gesture Keyboard Mode
-
-1. **Run the gesture keyboard:**
-   ```bash
-   python webcam_keyboard.py
-   ```
-
-2. **How to Type:**
-   - Position your hand in one of 9 screen zones
-   - Show 1-5 fingers to select character sets
-   - Hold the gesture steady to confirm selection
-
-3. **Special Gestures:**
-   - **Fist (0 fingers)**: Space
-   - **Open hand (5 fingers) in top zone**: Backspace
-   - **Both hands open**: Change mode (Letters/Numbers/Actions)
 
 ## Configuration
 
